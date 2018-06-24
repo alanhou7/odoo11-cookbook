@@ -13,5 +13,6 @@
 		'views/library_book.xml',
 		'security/groups.xml',
 		'security/ir.model.access.csv'
-	]
+	],
+	'depends': ['base', 'decimal_precision']
 }
