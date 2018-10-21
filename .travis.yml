@@ -1,4 +1,4 @@
-nguage: python
+language: python
  sudo: false
  cache:
    apt: true
