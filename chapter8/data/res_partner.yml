@@ -1,0 +1,15 @@
+-
+  !record {id: res_partner_packt, model: res.partner}:
+    name: Packt publishing
+    city: Birmingham
+    country_id: base.uk
+
+#-
+#  !record {id: book_cookbook, model: library.book}
+#     name: Odoo cookbook
+#     short_name: cookbook
+#     date_release: 2016-03-01
+#     author_ids:
+#     -   name: Alexandre Fayolle
+#     -   name: Daniel Reis
+#     -   name: Holger Brunn

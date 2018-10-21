@@ -1,0 +1,42 @@
+<!--<odoo noupdate="1">-->
+    <!--<record id="res_partner_packt" model="res.partner">-->
+        <!--<field name="name">Packt publishing</field>-->
+    <!--</record>-->
+<!--</odoo>-->
+<odoo noupdate="1">
+    <record id="book_category_all" model="library.book.category"
+            forcecreate="false">
+        <field name="name">All books</field>
+    </record>
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'base'),
+                         ('name', '=', 'main_partner')]" />
+        </function>
+        <value eval="{'noupdate': False}" />
+    </function>
+    <record id="base.main_partner" model="res.partner">
+        <field name="book_ids" eval="[(4, ref('book_cookbook'))]"></field>
+    </record>
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'base'),
+                         ('name', '=', 'main_partner')]" />
+        </function>
+        <value eval="{'noupdate': True}" />
+    </function>
+</odoo>
+<!--<odoo>-->
+    <!--<record id="base.main_company" model="res.company">-->
+        <!--<field name="name">Packt publishing</field>-->
+    <!--</record>-->
+    <!--<record id="book_cookbook" model="library.book">-->
+        <!--<field name="publisher_id" ref="base.main_partner" />-->
+    <!--</record>-->
+    <!--<record id="res_partner_packt" model="res.partner">-->
+                <!--<field name="name">Packt Publishing</field>-->
+                <!--<field name="city">Birmingham</field>-->
+                <!--<field name="country_id" ref="base.uk" />-->
+    <!--</record>-->
+<!--</odoo>-->
+

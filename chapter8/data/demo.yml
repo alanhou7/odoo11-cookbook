@@ -1,0 +1,17 @@
+-
+  !record {id: author_af, model: res.partner}
+     name: Alexandre Fayolle
+-
+  !record {id: author_dr, model: res.partner}
+     name: Daniel Reis
+-
+  !record {id: author_hb, model: res.partner}
+     name: Holger Brunn
+-
+  !record {id: book_cookbook, model: library.book}
+      name: Odoo cookbook
+      short_name: cookbook
+      date_release: 2016-03-01
+      author_ids: [(6, 0, [ref('author_af'), ref('author_dr'),
+                           ref('author_hb')])]
+      publisher_id: res_partner_packt

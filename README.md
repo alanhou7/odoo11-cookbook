@@ -30,13 +30,13 @@ however, do not simply take it a Chinese version of the above-mentioned book.
 初稿完成时间：2018年7月2日
 
 [第七章 Odoo模块数据](https://alanhou.org/module-data/)<br>
-稿完成时间：2018年7月29日
+初稿完成时间：2018年7月29日
 
-第八章 Odoo调试与自动测试<br>
-即将开始
+[第八章 Odoo调试与自动测试[(https://alanhou.org/odoo-debug-automate/)<br>
+初稿完成时间：2018年10月21日
 
 第九章 Odoo高级服务端开发技巧<br>
-尚未开始
+即将开始
 
 第十章 Odoo后台视图<br>
 尚未开始
